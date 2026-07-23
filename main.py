@@ -4,6 +4,7 @@ import sys
 from os import remove
 from pathlib import Path
 
+import cv2
 from PIL import Image
 
 IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff")
@@ -30,8 +31,6 @@ def parse_resolution(resolution: str) -> tuple[int, int]:
 
 
 def get_video_resolution(file_path: Path) -> tuple[int, int] | None:
-    import cv2
-
     cap = cv2.VideoCapture(str(file_path))
     if not cap.isOpened():
         return None
