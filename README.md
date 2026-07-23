@@ -25,6 +25,3 @@ resolution-deleter --min-width 1280 --min-height 720
 
 `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.tiff`
 
-## TODO
-
-- [ ] video support
